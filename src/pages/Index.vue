@@ -39,6 +39,7 @@
 <script>
 import { defineComponent } from "vue";
 import db from "boot/database";
+import CustomDialog from 'src/components/CustomDialog'
 export default defineComponent({
   name: "PageIndex",
   data() {
@@ -85,12 +86,13 @@ export default defineComponent({
     confirmDelete(keyNote) {
       this.$q
         .dialog({
-          title: "Deletar Anotação",
-          icon: 'delete',
-          message: "Tem certeza que deseja deletar essa anotação ?",
-          persistent: false,
-          ok: "Deletar",
-          cancel: "Cancelar",
+          component: CustomDialog,
+          // title: "Deletar Anotação",
+          // icon: 'delete',
+          // message: "Tem certeza que deseja deletar essa anotação ?",
+          // persistent: false,
+          // ok: "Deletar",
+          // cancel: "Cancelar",
         })
         .onOk(() => {
           this.deleteNote(keyNote);

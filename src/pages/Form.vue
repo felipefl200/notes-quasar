@@ -25,12 +25,13 @@
           v-model="form.note"
         />
         <div class="row">
-          <q-btn to="/" label="Voltar" color="dark" class="col" />
+          <q-btn to="/" label="Voltar" color="dark" class="col" push />
           <q-btn
             v-if="!$route.params.key"
             label="Salvar"
             type="submit"
             color="primary"
+            push
             class="col"
           />
           <q-btn
@@ -38,6 +39,7 @@
             label="Atualizar"
             type="submit"
             color="primary"
+            push
             class="col"
           />
         </div>
@@ -98,7 +100,7 @@ export default {
           .update(this.form);
         this.$q.notify({
           message: "Anotação atualizada com sucesso!",
-          color: "positive",
+          color: "secondary",
           icon: "check",
         });
       } catch (error) {
