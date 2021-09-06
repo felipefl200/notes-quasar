@@ -5,10 +5,13 @@
         ...content
         ... use q-card-section for it?
       -->
-      <div class="row items-center justify-evenly q-pa-md q-gutter-sm">
-        <div>Tem certeza dessa exclusão ?</div>
-        <div>
-          <q-icon name="delete" class="text-red" style="font-size: 2.5rem" />
+      <div class="q-pa-md q-gutter-sm">
+        <h6 class="text">Atenção</h6>
+        <div class="row items-center justify-between">
+          <div>Tem certeza dessa exclusão ?</div>
+          <div>
+            <q-icon name="delete" class="text-red" style="font-size: 2.5rem" />
+          </div>
         </div>
       </div>
       <!-- buttons example -->

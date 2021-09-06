@@ -143,7 +143,7 @@ module.exports = configure(function (ctx) {
         description: `Simple Quasar Notes PWA`,
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#ffffff',
+        background_color: '#2E8BC0',
         theme_color: '#027be3',
         icons: [
           {

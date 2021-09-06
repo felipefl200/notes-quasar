@@ -31,12 +31,12 @@ register(process.env.SERVICE_WORKER_FILE, {
   updated (/* registration */) {
     // console.log('New content is available; please refresh.')
     Notify.create({
-      message: 'Nova atualização disponível',
+      message: 'Atualização disponível',
       icon: 'cloud_download',
       closeBtn: 'Atualizar',
       timeout: 10000,
       onDismiss() {
-        location.reload()
+        location.reload(true)
       }
     })
   },
